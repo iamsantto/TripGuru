@@ -56,15 +56,100 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /*==== Body ====*/
 
+   body {
+    background: url(../img/bodybg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+   }
 
+   /*==== Navigation ====*/
 
+   .cusNav {
+     background: rgba(0, 0, 0, 0.8);
+   }
 
+   #select {
+     color: #fff;
+   }
 
+   #glypSearch {
+     color: #eee;
+     font-size: 1.5em;
+     padding-left: 5px;
+     vertical-align: middle;
+   }
 
+   #searchBox {
+      margin-right: 40px;
+   }
 
+   #searchBar {
+     border-radius: 20px;
+     height: 30px;
+   }
 
+   #acountLinks {
+     margin: 0px;
+   }
 
+   /*==== Footer ====*/
+
+   #foo {
+     background: rgba(0, 0, 0, 0.8);
+   }
+
+   #foo a {
+     color: #D4D4D4;
+   }
+
+   #foo a:hover {
+     text-decoration: none;
+     color: #888888;
+   }
+
+   #foo h5 {
+     color: rgba(217,139,58,0.7);
+     text-align: left;
+     font-size: 1.2em;
+     font-family: 'PT Sans', sans-serif;
+     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2), 0px 0px 1px rgba(0, 0, 0, 0.2);
+   }
+
+   .cusFooNav {
+     list-style-type: none;
+     text-align: left;
+     padding-left: 0px;
+     font-size: 0.9em;
+   }
+
+   .subscribeBtn {
+     margin-top: 5px;
+   }
+
+   #social {
+     color: #bbb;
+     margin: 10px;
+     font-size: 1.5em;
+   }
+
+   #social:hover {
+     color: #fff;
+   }
+
+   #createLove {
+     color: #EE543A;
+   }
+
+   .fooBottom {
+     background: rgba(0, 0, 0, 0.3);
+     color: rgba(255, 255, 255, 0.5);
+     padding: 10px;
+     font-family: 'Roboto Condensed', sans-serif;
+     font-size: 1em;
+   }
 
 
 
