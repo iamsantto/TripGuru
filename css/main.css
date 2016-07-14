@@ -65,11 +65,32 @@ textarea {
     background-attachment: fixed;
    }
 
+  #tabIcon {
+    color: #000;
+  }
+
+
+
+   .jumbo {
+     margin-top: 70px;
+     background: rgba(0, 0, 0, 0.4);;
+   }
+
+   .jumboCont {
+     color: #fff;
+   }
+
    /*==== Navigation ====*/
 
    .cusNav {
-     background: rgba(0, 0, 0, 0.8);
+     background: rgba(0, 0, 0, 0);
+     border-bottom: 0px;
    }
+
+   #tripHead {
+     color: #fff;
+   }
+
 
    #select {
      color: #fff;
@@ -82,9 +103,6 @@ textarea {
      vertical-align: middle;
    }
 
-   #searchBox {
-      margin-right: 40px;
-   }
 
    #searchBar {
      border-radius: 20px;
@@ -97,7 +115,9 @@ textarea {
 
    /*==== Footer ====*/
 
+
    #foo {
+     margin-top: 10px;
      background: rgba(0, 0, 0, 0.8);
    }
 
@@ -109,6 +129,8 @@ textarea {
      text-decoration: none;
      color: #888888;
    }
+
+
 
    #foo h5 {
      color: rgba(217,139,58,0.7);
@@ -170,6 +192,28 @@ textarea {
 
 }
 
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+ }
 /* ==========================================================================
    Helper classes
    ========================================================================== */

@@ -21,121 +21,127 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <nav class="navbar cusNav navbar-inverse">
+        <nav class="navbar cusNav navbar-inverse navbar-fixed-top">
             <div class="container">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
+                <button type="button" class="navbar-toggle collapsed" aria-expanded="false">
+                  <a href="#"><span class="glyphicon glyphicon-user"></span></a>
                 </button>
-                <a class="navbar-brand" href="#">TripGuru</a>
+                <button type="button" class="navbar-toggle collapsed" aria-expanded="false">
+                  <a href="#"><span class="glyphicon glyphicon-user"></span></a>
+                </button>
+                <a class="navbar-brand" id="tripHead" href="#">TripGuru</a>
               </div>
 
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="navigation">
-                <ul class="nav navbar-nav">
-                  <li><a href="#" id="select">Flights</a></li>
-                  <li><a href="#">Hotels</a></li>
-                  <li><a href="#">Holidays</a></li>
-                  <li><a href="#">Deals</a></li>
-                </ul>
-
-                <form class="navbar-form" id="acountLinks">
-                  <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Sign Up</a></li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sign In<span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Login with Fb</a></li>
-                        <li><a href="#">Login with Gplus</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><input type="text" class="form-control" placeholder="Username"></li>
-                        <li><input type="password" class="form-control" placeholder="Password"></li>
-                        <button type="submit" class="btn btn-default">Login</button>
-                      </ul>
-                    </li>
-                  </ul>
-                </form>
-
-                <form class="navbar-form navbar-right" id="searchBox" role="search">
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="searchBar" placeholder="Search TripGuru">
-                      <a href="#"><span class="glyphicon glyphicon-search" id="glypSearch" aria-hidden="true"></span></a>
-                  </div>
-                </form>
+                    <li><a href="#">Sign In</a></li>
               </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
           </nav>
 
-          <footer id="foo">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-3 widget1">
-                  <h5>Navigation</h5>
-      						<ul class="cusFooNav">
-      							<li><a href="#">Home</a></li>
-      							<li><a href="#">Flights</a></li>
-      							<li><a href="#">Hotels</a></li>
-      							<li><a href="#">Holidays</a></li>
-                    <li><a href="#">Deals</a></li>
-      						</ul>
+
+          <div class="jumbotron jumbo">
+            <div class="container jumboCont">
+              <ul class="nav nav-tabs nav-justified">
+                <li class="active"><a href="#flights" data-toggle="tab"><span class="glyphicon glyphicon-plane" id="tabIcon"></span>Flights</a></li>
+                <li><a href="#hotels" data-toggle="tab"><i class="fa fa-building" id="tabIcon"></i>Hotels</a></li>
+                <li><a href="#holidays" data-toggle="tab"><span class="glyphicon glyphicon-glass" id="tabIcon"></span>Holidays</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active fade in" id="flights">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </div>
-                <div class="col-md-3 widget1">
-                  <h5>About Us</h5>
-      						<ul class="cusFooNav">
-                  	<li><a href="#">FAQs</a></li>
-                  	<li><a href="#">Site Map</a></li>
-                  	<li><a href="#">Complaints</a></li>
-                  	<li><a href="#">Contact Us</a></li>
-                  	<li><a href="#">Payment Security</a></li>
-                  	<li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">User Agreement</a></li>
-                    <li><a href="#">Visa Information</a></li>
-    						  </ul>
+
+                <div class="tab-pane fade" id="hotels">
+Lorem ipsum dolordata-toggle="tab" sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </div>
-                <div class="col-md-3 widget1">
-                  <h5>Trip Guru</h5>
-      						<ul class="cusFooNav">
-                  	<li><a href="#">Blog</a></li>
-                  	<li><a href="#">Offers</a></li>
-                  	<li><a href="#">Testimonials</a></li>
-                  	<li><a href="#">Reviews</a></li>
-                  	<li><a href="#">Careers</a></li>
-                  	<li><a href="#">Travel Guide</a></li>
-    						  </ul>
-                </div>
-                <div class="col-md-3">
-                  <h5>Get In Touch</h5>
-                  <ul class="cusFooNav">
-                  	<li><div class="form-group">
-                          <input type="email" class="form-control" placeholder="We dont spam!">
-                          <button type="submit" class="btn btn-primary subscribeBtn">Subscribe</button>
-                        </div>
-                    </li>
-                    <li><a href="#"><i class="fa fa-facebook-official" id="social"></a></i>
-                        <a href="#"><i class="fa fa-twitter" id="social"></a></i>
-                        <a href="#"><i class="fa fa-youtube" id="social"></a></i>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="row fooBottom">
-              <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        &copy; TripGuru 2016 - All Rights Reserved
-                    </div>
-                    <div class="col-md-3 col-md-offset-3">
-                      <span id="created">Created with <i class="fa fa-heart" id="createLove"></i> by <a href="https://github.com/iamsantto" target="_blank">iamsantto</a> <br></span>
-                    </div>
+
+                <div class="tab-pane fade" id="holidays">
+data-toggle="tab"
                 </div>
 
               </div>
             </div>
+          </div>
+
+
+
+
+
+
+          <footer id="foo">
+              <div class="container" >
+                <div class="row">
+                  <div class="col-md-3 widget1">
+                    <h5>Navigation</h5>
+        						<ul class="cusFooNav">
+        							<li><a href="#">Home</a></li>
+        							<li><a href="#">Flights</a></li>
+        							<li><a href="#">Hotels</a></li>
+        							<li><a href="#">Holidays</a></li>
+                      <li><a href="#">Deals</a></li>
+        						</ul>
+                  </div>
+                  <div class="col-md-3 widget1">
+                    <h5>About Us</h5>
+        						<ul class="cusFooNav">
+                    	<li><a href="#">FAQs</a></li>
+                    	<li><a href="#">Site Map</a></li>
+                    	<li><a href="#">Complaints</a></li>
+                    	<li><a href="#">Contact Us</a></li>
+                    	<li><a href="#">Payment Security</a></li>
+                    	<li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">User Agreement</a></li>
+                      <li><a href="#">Visa Information</a></li>
+      						  </ul>
+                  </div>
+                  <div class="col-md-3 widget1">
+                    <h5>Trip Guru</h5>
+        						<ul class="cusFooNav">
+                    	<li><a href="#">Blog</a></li>
+                    	<li><a href="#">Offers</a></li>
+                    	<li><a href="#">Testimonials</a></li>
+                    	<li><a href="#">Reviews</a></li>
+                    	<li><a href="#">Careers</a></li>
+                    	<li><a href="#">Travel Guide</a></li>
+      						  </ul>
+                  </div>
+                  <div class="col-md-3">
+                    <h5>Get In Touch</h5>
+                    <ul class="cusFooNav">
+                    	<li><div class="form-group">
+                            <input type="email" class="form-control" placeholder="We dont spam!">
+                            <button type="submit" class="btn btn-primary subscribeBtn">Subscribe</button>
+                          </div>
+                      </li>
+                      <li><a href="#"><i class="fa fa-facebook-official" id="social"></a></i>
+                          <a href="#"><i class="fa fa-twitter" id="social"></a></i>
+                          <a href="#"><i class="fa fa-youtube" id="social"></a></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container-fluid">
+                <div class="row fooBottom">
+                  <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            &copy; TripGuru 2016 - All Rights Reserved
+                        </div>
+                        <div class="col-md-3 col-md-offset-3">
+                          <span id="created">Created with <i class="fa fa-heart" id="createLove"></i> by <a href="https://github.com/iamsantto" target="_blank">iamsantto</a> <br></span>
+                        </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
           </footer>
 
 
