@@ -67,9 +67,88 @@ textarea {
 
   #tabIcon {
     color: #000;
+    font-size: 1.3em;
   }
 
+  .nav-tabs{
+  background-color:#16161;
+  border:none;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  }
 
+  .tab-content{
+      color:#fff;
+      padding:5px
+  }
+  .nav-tabs > li > a{
+    border: none;
+    background-color: #2CC990;
+    color: #000;
+  }
+  .nav-tabs > li > a:hover{
+      border: none;
+      border-radius: 0;
+      color:#000;
+      background-color: #AAB69B !important;
+  }
+
+  .nav-tabs > li.active > a {
+    background-color: #D6DAC2 !important;
+    color: #000;
+    border: none;
+  }
+
+  .nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus, .nav-tabs.nav-justified>.active>a:hover {
+    border: none;
+  }
+
+  .nav-tabs.nav-justified>li>a {
+    border: none;
+  }
+
+  .nav-tabs > li {
+    padding: 10px;
+  }
+
+  .bookingBox {
+    background: rgba(0, 0, 0, 0.7);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+  .bookingframe {
+    max-width: 600px;
+  }
+
+  #dBtab > li.active > a {
+    background-color: #d9534f !important;
+    color: #eee;
+  }
+
+  #dBtab > li > a{
+    border: none;
+    background-color: #D2D7D3;
+    color: #000;
+  }
+
+  #ticketsNumber {
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+  }
+
+  .ticketsCenterDo {
+    max-width: 475px;
+  }
+
+  .form-group {
+    padding: 0px 10px;
+  }
+
+  .tbContFlight {
+
+  }
 
    .jumbo {
      margin-top: 70px;
@@ -80,6 +159,18 @@ textarea {
      color: #fff;
    }
 
+   .modalBox {
+      background: #ECEFA9;
+   }
+
+   .modal-header {
+      border-bottom: 1px solid #000;
+      border-width: thin;
+   }
+
+   .modalBody {
+     color:#E22211;
+   }
    /*==== Navigation ====*/
 
    .cusNav {

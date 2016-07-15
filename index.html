@@ -26,10 +26,10 @@
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" aria-expanded="false">
-                  <a href="#"><span class="glyphicon glyphicon-user"></span></a>
+                  <a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span></a>
                 </button>
                 <button type="button" class="navbar-toggle collapsed" aria-expanded="false">
-                  <a href="#"><span class="glyphicon glyphicon-user"></span></a>
+                  <a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span></a>
                 </button>
                 <a class="navbar-brand" id="tripHead" href="#">TripGuru</a>
               </div>
@@ -37,8 +37,8 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="navigation">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Sign Up</a></li>
-                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">Sign Up</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">Sign In</a></li>
               </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
           </nav>
@@ -46,14 +46,136 @@
 
           <div class="jumbotron jumbo">
             <div class="container jumboCont">
-              <ul class="nav nav-tabs nav-justified">
-                <li class="active"><a href="#flights" data-toggle="tab"><span class="glyphicon glyphicon-plane" id="tabIcon"></span>Flights</a></li>
-                <li><a href="#hotels" data-toggle="tab"><i class="fa fa-building" id="tabIcon"></i>Hotels</a></li>
-                <li><a href="#holidays" data-toggle="tab"><span class="glyphicon glyphicon-glass" id="tabIcon"></span>Holidays</a></li>
-              </ul>
+
               <div class="tab-content">
                 <div class="tab-pane active fade in" id="flights">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                  <div class="bookingBox">
+                    <div class="bookingframe center-block">
+
+                            <ul class="nav nav-tabs nav-justified" id="dBtab">
+                                <li class="active"><a data-toggle="tab" href="#domesticFlight">Domestic</a></li>
+                                <li><a data-toggle="tab" href="#internationalFlight">International</a></li>
+                            </ul>
+
+                              <div class="tab-content">
+                                <div id="domesticFlight" class="tab-pane fade in active tbContFlight center-block">
+
+                                  <form class="form-inline">
+                                    <div class="form-group">
+                                      <label class="checkbox-inline">
+                                        <input type="radio" id="oneWayTrip" name="selectTrip" value="option1"> One Way
+                                      </label>
+                                      <label class="checkbox-inline">
+                                        <input type="radio" id="returnWayTrip" name="selectTrip" value="option2"> Round Trip
+                                      </label>
+                                    </div><br><br>
+                                    <div class="form-group">
+                                      <label for="sourcePlace">From</label>
+                                      <input type="text" class="form-control" id="sourcePlace" placeholder="From">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="destinationPlace">To</label>
+                                      <input type="text" class="form-control" id="destinationPlace" placeholder="To">
+                                    </div><br><br>
+                                    <div class="form-group">
+                                      <label for="departureDate">Departure</label>
+                                      <input type="date" class="form-control" id="departureDate" placeholder="mm/dd/yyyy">
+                                    </div>
+                                    <div class="form-group" id="returnDateBox">
+                                      <label for="returnDate">Return</label>
+                                      <input type="date" class="form-control" id="returnDate">
+                                    </div><br><br>
+                                    <div class="form-group">
+                                      <label for="classFlight">Preffered Class</label>
+                                      <select class="form-control" id="classFlight">
+                                        <option>Economy</option>
+                                        <option>Premium Economy</option>
+                                        <option>Business</option>
+                                      </select>
+                                    </div><br><br>
+                                    <div class="ticketsCenterDo center-block">
+                                        <div class="form-group" id="ticketsNumber">
+                                        <span id="helpBlock" class="help-block">Number of Tickets</span>
+                                       <div class="form-group">
+                                          <label for="ticketNumberA">Adult</label>
+                                          <input type="number" class="form-control" id="ticketNumberA" placeholder="-" min="1" max="5">
+                                        </div>
+                                        <div class="form-group">
+                                           <label for="ticketNumberC">Infant</label>
+                                           <input type="number" class="form-control" id="ticketNumberA" placeholder="-" min="1" max="5">
+                                         </div>
+                                         <div class="form-group">
+                                            <label for="ticketNumberC">Children</label>
+                                            <input type="number" class="form-control" id="ticketNumberC" placeholder="-" min="1" max="5">
+                                          </div><br><br>
+                                        </div><br><br>
+                                  </div>
+                                    <button type="button" class="btn btn-danger center-block" data-toggle="modal" data-target="#myModal">Check Flights</button><br>
+                                  </form>
+                                </div>
+
+                                <div id="internationalFlight" class="tab-pane fade">
+
+                                  <form class="form-inline">
+                                    <div class="form-group">
+                                      <label class="checkbox-inline">
+                                        <input type="radio" id="oneWayTrip" name="selectTrip" value="option1"> One Way
+                                      </label>
+                                      <label class="checkbox-inline">
+                                        <input type="radio" id="returnWayTrip" name="selectTrip" value="option2"> Round Trip
+                                      </label>
+                                    </div><br><br>
+                                    <div class="form-group">
+                                      <label for="sourcePlace">From</label>
+                                      <input type="text" class="form-control" id="sourcePlace" placeholder="From">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="destinationPlace">To</label>
+                                      <input type="text" class="form-control" id="destinationPlace" placeholder="To">
+                                    </div><br><br>
+                                    <div class="form-group">
+                                      <label for="departureDate">Departure</label>
+                                      <input type="date" class="form-control" id="departureDate" placeholder="mm/dd/yyyy">
+                                    </div>
+                                    <div class="form-group" id="returnDateBox">
+                                      <label for="returnDate">Return</label>
+                                      <input type="date" class="form-control" id="returnDate">
+                                    </div><br><br>
+                                    <div class="form-group">
+                                      <label for="classFlight">Preffered Class</label>
+                                      <select class="form-control" id="classFlight">
+                                        <option>Economy</option>
+                                        <option>Business</option>
+                                      </select>
+                                    </div><br><br>
+                                    <div class="ticketsCenterDo center-block">
+                                        <div class="form-group" id="ticketsNumber">
+                                        <span id="helpBlock" class="help-block">Number of Tickets</span>
+                                       <div class="form-group">
+                                          <label for="ticketNumberA">Adult</label>
+                                          <input type="number" class="form-control" id="ticketNumberA" placeholder="-" min="1" max="5">
+                                        </div>
+                                        <div class="form-group">
+                                           <label for="ticketNumberC">Infant</label>
+                                           <input type="number" class="form-control" id="ticketNumberA" placeholder="-" min="1" max="5">
+                                         </div>
+                                         <div class="form-group">
+                                            <label for="ticketNumberC">Children</label>
+                                            <input type="number" class="form-control" id="ticketNumberC" placeholder="-" min="1" max="5">
+                                          </div><br><br>
+                                        </div><br><br>
+                                  </div>
+                                    <button type="button" class="btn btn-danger center-block" data-toggle="modal" data-target="#myModal">Check Flights</button><br>
+                                  </form>
+
+                                </div>
+                              </div><!--end tabs-->
+
+                            </div>
+                  </div><!--end bookingBox-->
+
+
                 </div>
 
                 <div class="tab-pane fade" id="hotels">
@@ -64,11 +186,32 @@ Lorem ipsum dolordata-toggle="tab" sit amet, consectetur adipisicing elit, sed d
 data-toggle="tab"
                 </div>
 
+                <ul class="nav nav-tabs nav-justified">
+                  <li class="active"><a href="#flights" data-toggle="tab"><span class="glyphicon glyphicon-plane" id="tabIcon"></span>&ensp;Flights</a></li>
+                  <li><a href="#hotels" data-toggle="tab"><i class="fa fa-building" id="tabIcon"></i>&ensp;Hotels</a></li>
+                  <li><a href="#holidays" data-toggle="tab"><span class="glyphicon glyphicon-glass" id="tabIcon"></span>&ensp;Holidays</a></li>
+                </ul>
+
               </div>
             </div>
           </div>
 
+              <div id="myModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
 
+                    <!-- Modal content-->
+                    <div class="modal-content modalBox">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title text-center">We're almost there !</h4>
+                      </div>
+                      <div class="modal-body text-center modalBody">
+                        <p><strong>Creating awesome stuff takes time. Hang on.</strong></p>
+                      </div>
+                    </div>
+
+                  </div>
+              </div> <!--end modal-->
 
 
 
@@ -89,38 +232,38 @@ data-toggle="tab"
                   <div class="col-md-3 widget1">
                     <h5>About Us</h5>
         						<ul class="cusFooNav">
-                    	<li><a href="#">FAQs</a></li>
-                    	<li><a href="#">Site Map</a></li>
-                    	<li><a href="#">Complaints</a></li>
-                    	<li><a href="#">Contact Us</a></li>
-                    	<li><a href="#">Payment Security</a></li>
-                    	<li><a href="#">Privacy Policy</a></li>
-                      <li><a href="#">User Agreement</a></li>
-                      <li><a href="#">Visa Information</a></li>
+                    	<li><a href="#" data-toggle="modal" data-target="#myModal">FAQs</a></li>
+                    	<li><a href="#" data-toggle="modal" data-target="#myModal">Site Map</a></li>
+                    	<li><a href="#" data-toggle="modal" data-target="#myModal">Complaints</a></li>
+                    	<li><a href="#" data-toggle="modal" data-target="#myModal">Contact Us</a></li>
+                    	<li><a href="#" data-toggle="modal" data-target="#myModal">Payment Security</a></li>
+                    	<li><a href="#" data-toggle="modal" data-target="#myModal">Privacy Policy</a></li>
+                      <li><a href="#" data-toggle="modal" data-target="#myModal">User Agreement</a></li>
+                      <li><a href="#" data-toggle="modal" data-target="#myModal">Visa Information</a></li>
       						  </ul>
                   </div>
                   <div class="col-md-3 widget1">
                     <h5>Trip Guru</h5>
         						<ul class="cusFooNav">
-                    	<li><a href="#">Blog</a></li>
-                    	<li><a href="#">Offers</a></li>
-                    	<li><a href="#">Testimonials</a></li>
-                    	<li><a href="#">Reviews</a></li>
-                    	<li><a href="#">Careers</a></li>
-                    	<li><a href="#">Travel Guide</a></li>
+                    	<li><a href="#" data-toggle="modal" data-target="#myModal">Blog</a></li>
+                    	<li><a href="#" data-toggle="modal" data-target="#myModal">Offers</a></li>
+                    	<li><a href="#" data-toggle="modal" data-target="#myModal">Testimonials</a></li>
+                    	<li><a href="#" data-toggle="modal" data-target="#myModal">Reviews</a></li>
+                    	<li><a href="#" data-toggle="modal" data-target="#myModal">Careers</a></li>
+                    	<li><a href="#" data-toggle="modal" data-target="#myModal">Travel Guide</a></li>
       						  </ul>
                   </div>
                   <div class="col-md-3">
                     <h5>Get In Touch</h5>
                     <ul class="cusFooNav">
-                    	<li><div class="form-group">
+                    	<li>
                             <input type="email" class="form-control" placeholder="We dont spam!">
-                            <button type="submit" class="btn btn-primary subscribeBtn">Subscribe</button>
-                          </div>
-                      </li>
-                      <li><a href="#"><i class="fa fa-facebook-official" id="social"></a></i>
-                          <a href="#"><i class="fa fa-twitter" id="social"></a></i>
-                          <a href="#"><i class="fa fa-youtube" id="social"></a></i>
+                            <button type="button" class="btn btn-primary subscribeBtn" data-toggle="modal" data-target="#myModal">Subscribe</button>
+
+                      </li><br>
+                      <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-facebook-official" id="social"></a></i>
+                          <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-twitter" id="social"></a></i>
+                          <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-youtube" id="social"></a></i>
                       </li>
                     </ul>
                   </div>
@@ -148,6 +291,17 @@ data-toggle="tab"
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
+        <script>
+          $(document).ready(function () {
+              $("#returnDateBox").hide();
+              $("#returnWayTrip").click(function () {
+                  $("#returnDateBox").show();
+              });
+              $("#oneWayTrip").click(function () {
+                  $("#returnDateBox").hide();
+              });
+          });
+        </script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/bootstrap.min.js"></script>
