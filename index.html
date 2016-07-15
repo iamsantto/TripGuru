@@ -38,8 +38,8 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="navigation">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" data-toggle="modal" data-target="#myModal" id="acountText">Sign Up</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#myModal" id="acountText">Sign In</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal" id="acountText"><span class="glyphicon glyphicon-user" id="acountIconT"></span>Sign In</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal" id="acountText"><span class="glyphicon glyphicon-plus" id="acountIconT"></span>Sign Up</a></li>
               </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
           </nav>
@@ -73,23 +73,23 @@
                                     </div><br><br>
                                     <div class="form-group">
                                       <label for="sourcePlace">From</label>
-                                      <input type="text" class="form-control" id="sourcePlace" placeholder="From">
+                                      <input type="text" class="form-control form-just" id="sourcePlace" placeholder="From">
                                     </div>
                                     <div class="form-group">
                                       <label for="destinationPlace">To</label>
-                                      <input type="text" class="form-control" id="destinationPlace" placeholder="To">
+                                      <input type="text" class="form-control form-just" id="destinationPlace" placeholder="To">
                                     </div><br><br>
                                     <div class="form-group">
                                       <label for="departureDate">Departure</label>
-                                      <input type="date" class="form-control" id="departureDate" placeholder="mm/dd/yyyy">
+                                      <input type="date" class="form-control form-just" id="departureDate" placeholder="mm/dd/yyyy">
                                     </div>
                                     <div class="form-group" id="returnDateBox">
                                       <label for="returnDate">Return</label>
-                                      <input type="date" class="form-control" id="returnDate">
+                                      <input type="date" class="form-control form-just" id="returnDate">
                                     </div><br><br>
                                     <div class="form-group">
-                                      <label for="classFlight">Preffered Class</label>
-                                      <select class="form-control" id="classFlight">
+                                      <label for="classFlight">Class</label>
+                                      <select class="form-control form-just" id="classFlight">
                                         <option>Economy</option>
                                         <option>Premium Economy</option>
                                         <option>Business</option>
@@ -100,15 +100,15 @@
                                         <span id="helpBlock" class="help-block">Number of Tickets</span>
                                        <div class="form-group">
                                           <label for="ticketNumberA">Adult</label>
-                                          <input type="number" class="form-control" id="ticketNumberA" placeholder="-" min="1" max="5">
+                                          <input type="number" class="form-control form-just" id="ticketNumberA" placeholder="-" min="1" max="5">
                                         </div>
                                         <div class="form-group">
                                            <label for="ticketNumberC">Infant</label>
-                                           <input type="number" class="form-control" id="ticketNumberA" placeholder="-" min="1" max="5">
+                                           <input type="number" class="form-control form-just" id="ticketNumberA" placeholder="-" min="1" max="5">
                                          </div>
                                          <div class="form-group">
                                             <label for="ticketNumberC">Children</label>
-                                            <input type="number" class="form-control" id="ticketNumberC" placeholder="-" min="1" max="5">
+                                            <input type="number" class="form-control form-just" id="ticketNumberC" placeholder="-" min="1" max="5">
                                           </div><br><br>
                                         </div><br><br>
                                   </div>
@@ -121,31 +121,31 @@
                                   <form class="form-inline">
                                     <div class="form-group">
                                       <label class="checkbox-inline">
-                                        <input type="radio" id="oneWayTrip" name="selectTrip" value="option1"> One Way
+                                        <input type="radio" id="oneWayTrip1" name="selectTrip" value="option1"> One Way
                                       </label>
                                       <label class="checkbox-inline">
-                                        <input type="radio" id="returnWayTrip" name="selectTrip" value="option2"> Round Trip
+                                        <input type="radio" id="returnWayTrip1" name="selectTrip" value="option2"> Round Trip
                                       </label>
                                     </div><br><br>
                                     <div class="form-group">
                                       <label for="sourcePlace">From</label>
-                                      <input type="text" class="form-control" id="sourcePlace" placeholder="From">
+                                      <input type="text" class="form-control form-just" id="sourcePlace" placeholder="From">
                                     </div>
                                     <div class="form-group">
                                       <label for="destinationPlace">To</label>
-                                      <input type="text" class="form-control" id="destinationPlace" placeholder="To">
+                                      <input type="text" class="form-control form-just" id="destinationPlace" placeholder="To">
                                     </div><br><br>
                                     <div class="form-group">
                                       <label for="departureDate">Departure</label>
-                                      <input type="date" class="form-control" id="departureDate" placeholder="mm/dd/yyyy">
+                                      <input type="date" class="form-control form-just" id="departureDate" placeholder="mm/dd/yyyy">
                                     </div>
-                                    <div class="form-group" id="returnDateBox">
-                                      <label for="returnDate">Return</label>
-                                      <input type="date" class="form-control" id="returnDate">
+                                    <div class="form-group" id="returnDateBox1">
+                                      <label for="returnDate1">Return</label>
+                                      <input type="date" class="form-control form-just" id="returnDate1">
                                     </div><br><br>
                                     <div class="form-group">
-                                      <label for="classFlight">Preffered Class</label>
-                                      <select class="form-control" id="classFlight">
+                                      <label for="classFlight">Class</label>
+                                      <select class="form-control form-just" id="classFlight">
                                         <option>Economy</option>
                                         <option>Business</option>
                                       </select>
@@ -155,15 +155,15 @@
                                         <span id="helpBlock" class="help-block">Number of Tickets</span>
                                        <div class="form-group">
                                           <label for="ticketNumberA">Adult</label>
-                                          <input type="number" class="form-control" id="ticketNumberA" placeholder="-" min="1" max="5">
+                                          <input type="number" class="form-control form-just" id="ticketNumberA" placeholder="-" min="1" max="5">
                                         </div>
                                         <div class="form-group">
                                            <label for="ticketNumberC">Infant</label>
-                                           <input type="number" class="form-control" id="ticketNumberA" placeholder="-" min="1" max="5">
+                                           <input type="number" class="form-control form-just" id="ticketNumberA" placeholder="-" min="1" max="5">
                                          </div>
                                          <div class="form-group">
                                             <label for="ticketNumberC">Children</label>
-                                            <input type="number" class="form-control" id="ticketNumberC" placeholder="-" min="1" max="5">
+                                            <input type="number" class="form-control form-just" id="ticketNumberC" placeholder="-" min="1" max="5">
                                           </div><br><br>
                                         </div><br><br>
                                   </div>
@@ -180,11 +180,93 @@
                 </div>
 
                 <div class="tab-pane fade" id="hotels">
-Lorem ipsum dolordata-toggle="tab" sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  <div class="bookingBox">
+                    <div class="bookingframe center-block">
+
+                            <ul class="nav nav-tabs nav-justified" id="dBtab">
+                                <li class="active"><a data-toggle="tab" href="#hotelBook">Book A Hotel</a></li>
+                            </ul>
+
+                              <div class="tab-content">
+                                <div id="hotelBook" class="tab-pane fade in active tbContFlight center-block">
+
+                                  <form class="form-inline">
+                                    <div class="form-group">
+                                      <label for="hotelName">Hotel</label>
+                                      <input type="text" class="form-control form-just" id="hotelName" placeholder="Hotel">
+                                    </div><br><br>
+                                    <div class="form-group">
+                                      <label for="hotelChkIn">Check In</label>
+                                      <input type="date" class="form-control form-just" id="hotelChkIn" placeholder="mm/dd/yyyy">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="hotelChkOut">Check Out</label>
+                                      <input type="date" class="form-control form-just" id="hotelChkOut">
+                                    </div><br><br>
+
+                                    <div class="form-group">
+                                       <label for="numberNights">Nights</label>
+                                       <input type="number" class="form-control form-just" id="numberNights" placeholder="-" min="1" max="5">
+                                     </div><br><br>
+
+                                    <div class="ticketsCenterDo center-block">
+                                        <div class="form-group" id="ticketsNumber">
+                                        <span id="helpBlock" class="help-block">Number of People</span>
+                                       <div class="form-group">
+                                          <label for="numerPersonA">Adult</label>
+                                          <input type="number" class="form-control form-just" id="numerPersonA" placeholder="-" min="1" max="5">
+                                        </div>
+                                        <div class="form-group">
+                                           <label for="numerPersonI">Infant</label>
+                                           <input type="number" class="form-control form-just" id="numerPersonI" placeholder="-" min="1" max="5">
+                                         </div>
+                                         <div class="form-group">
+                                            <label for="numerPersonC">Children</label>
+                                            <input type="number" class="form-control form-just" id="numerPersonC" placeholder="-" min="1" max="5">
+                                          </div><br><br>
+                                        </div><br><br>
+                                  </div>
+                                    <button type="button" class="btn btn-danger center-block" data-toggle="modal" data-target="#myModal">Search</button><br>
+                                  </form>
+                                </div>
+                              </div><!--end tabs-->
+
+                            </div>
+                  </div><!--end bookingBox-->
                 </div>
 
                 <div class="tab-pane fade" id="holidays">
-data-toggle="tab"
+
+                  <div class="bookingBox">
+                    <div class="bookingframe center-block">
+
+                            <ul class="nav nav-tabs nav-justified" id="dBtab">
+                                <li class="active"><a data-toggle="tab" href="#holiday">Holiday Pakages</a></li>
+                            </ul>
+
+                              <div class="tab-content">
+                                <div id="holiday" class="tab-pane fade in active tbContFlight center-block">
+
+                                  <form class="form-inline">
+                                    <div class="form-group">
+                                      <label for="holidaySource">From</label>
+                                      <input type="text" class="form-control form-just" id="holidaySource" placeholder="Starting From">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="holidayDestination">Destination</label>
+                                      <input type="text" class="form-control form-just" id="holidayDestination" placeholder="Holiday Destination">
+                                    </div><br><br>
+
+                                    <button type="button" class="btn btn-danger center-block" data-toggle="modal" data-target="#myModal">Search</button><br>
+                                  </form>
+                                  <hr>
+                                  <button type="button" class="btn btn-success center-block" data-toggle="modal" data-target="#myModal">Surprise Me</button><br>
+                                </div>
+                              </div><!--end tabs-->
+
+                            </div>
+                  </div><!--end bookingBox-->
+
                 </div>
 
                 <ul class="nav nav-tabs nav-justified">
@@ -303,6 +385,18 @@ data-toggle="tab"
               });
           });
         </script>
+        <script>
+          $(document).ready(function () {
+              $("#returnDateBox1").hide();
+              $("#returnWayTrip1").click(function () {
+                  $("#returnDateBox1").show();
+              });
+              $("#oneWayTrip1").click(function () {
+                  $("#returnDateBox1").hide();
+              });
+          });
+        </script>
+
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/bootstrap.min.js"></script>
