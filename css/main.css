@@ -77,6 +77,7 @@ textarea {
   margin-bottom: 0px;
   }
 
+
   .tab-content{
       color:#fff;
       padding:5px
@@ -113,9 +114,7 @@ textarea {
 
   .bookingBox {
     background: rgba(0, 0, 0, 0.7);
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
   }
 
   .bookingframe {
@@ -151,7 +150,7 @@ textarea {
   }
 
    .jumbo {
-     margin-top: 70px;
+     margin-top: 50px;
      background: rgba(0, 0, 0, 0.4);;
    }
 
@@ -174,7 +173,7 @@ textarea {
    /*==== Navigation ====*/
 
    .cusNav {
-     background: rgba(0, 0, 0, 0);
+     background: rgba(0,88,122,0.8);
      border-bottom: 0px;
    }
 
@@ -182,27 +181,21 @@ textarea {
      color: #fff;
    }
 
+   #acountText {
+     color: #E74C3C;
+   }
 
    #select {
      color: #fff;
    }
 
-   #glypSearch {
-     color: #eee;
-     font-size: 1.5em;
-     padding-left: 5px;
-     vertical-align: middle;
+   #acountIcon {
+     /*color: #d9534f;*/
+     color: #000;
+     font-size: 1.2em;
    }
 
 
-   #searchBar {
-     border-radius: 20px;
-     height: 30px;
-   }
-
-   #acountLinks {
-     margin: 0px;
-   }
 
    /*==== Footer ====*/
 
